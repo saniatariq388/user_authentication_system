@@ -16,21 +16,39 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+--------------------------------------
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Frontend Overview
+The frontend is built using Next.js. The application contains several pages and components related to user authentication: Sign Up, Sign In, Forgot Password, and Reset Password.
 
-## Learn More
+------------------
 
-To learn more about Next.js, take a look at the following resources:
+1. Pages in Authentication System
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Sign Up Page (signup/page.tsx) 
+register a new user
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+-----------------------
 
-## Deploy on Vercel
+2. Sign In Page (signin/page.tsx)
+ allows users to log in
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+-------------------------------
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. Forgot Password Page (forgot-password/page.tsx)
+
+allows users to request a password reset by entering their email.
+
+---------------
+
+o connect the backend with the frontend
+
+1. Start Your Backend Server
+node server.js
+
+3. Frontend: Making API Calls
+   through fetch("http://localhost:5000/api/auth/signup")
+   with method POST
+
+   if user exist 
+   allow user to shop route
